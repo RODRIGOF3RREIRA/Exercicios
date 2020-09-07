@@ -10,9 +10,9 @@ import java.util.Scanner;
 public class ex04 {
     public static void main(String[] args){
     Scanner leitor = new Scanner(System.in, "ISO-8859-1");
-    int numero1 [] = new int [5];
-    int numero2 [] = new int [5];
-    int resultado[]  = new int [5];
+    int numero1 [] = new int [10];
+    int numero2 [] = new int [10];
+    int resultado[]  = new int [10];
     int i;
     
     for (i = 0; i < 5; i++) {
