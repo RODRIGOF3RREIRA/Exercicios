@@ -10,6 +10,7 @@ public class Ex01 {
         Scanner leitor = new Scanner(System.in, "ISO-8859-1");
 
         int matriz[][] = new int[5][5];
+        int par = 0;
 
         System.out.println("Digite os valores da matriz:");
 
@@ -20,15 +21,27 @@ public class Ex01 {
                 matriz[i][j] = leitor.nextInt();
             }
         }
-        
+
         System.out.println("\nA Matriz ficou: \n");
-        for(int i = 0; i < 5; i++){
-            for(int j = 0; j < 5; j++){
-                System.out.printf("\t %d \t",matriz[i][j]); 
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.printf("\t %d \t", matriz[i][j]);
             }
             System.out.println();
         }
 
-    }
+        for (int i = 0; i < 5; i++) {
 
+            for (int j = 0; j < 5; j++) {
+                for (i = 0; i < 5; i++) {
+                    if ((matriz[i][j] % 2) == 0) {
+                        par++;
+                    } else {
+
+                    }
+                }
+            }
+            System.out.println("Total de números pares: "+par);
+        }
+    }
 }
