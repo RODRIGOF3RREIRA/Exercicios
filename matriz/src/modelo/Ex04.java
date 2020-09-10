@@ -10,10 +10,6 @@ public class Ex04 {
         Scanner leitor = new Scanner(System.in, "ISO-8859-1");
 
         int matriz[][] = new int[6][3];
-        int maior = 0;
-        int menor;
-        int compara;
-        int maiorResult = 0;
 
         System.out.println("Digite os valores da matriz:");
 
@@ -32,18 +28,17 @@ public class Ex04 {
             }
             System.out.println();
         }
-
+        int max = matriz[0][0];
         for (int i = 0; i < 6; i++) {
-            compara = 0;
+
             for (int j = 0; j < 3; j++) {
-                compara = matriz[i][j];
-                maior = compara;
-                if(maior > compara){
-                    maiorResult = maior;
-                }else;
+
+                if (matriz[i][j] > max) {
+                        max  = matriz[i][j];
+                }
             }
         }
-        System.out.printf("\nO maior número é: %d ",maiorResult);
+        System.out.println("O maior é "+matriz);
 
     }
 }
