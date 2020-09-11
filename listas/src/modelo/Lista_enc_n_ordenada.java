@@ -108,8 +108,8 @@ public class Lista_enc_n_ordenada {
                     
                 }
             }
-
-        }
+            
+        }while(op != 5);
     }
 }
 
