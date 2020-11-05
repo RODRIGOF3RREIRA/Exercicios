@@ -1,4 +1,4 @@
-package pilha;
+package lista02;
 
 
 import java.util.Scanner;
